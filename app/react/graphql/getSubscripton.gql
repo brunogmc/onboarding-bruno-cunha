@@ -1,0 +1,6 @@
+query getSubscription($userEmail: String){
+  getSubscription(userEmail: $userEmail) {
+    userEmail
+  }
+}
+

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+}
+
+.quantityContainer{
+    display: flex;    
+    flex-direction: column;
+}
+
+.number{
+    margin: 0;
+}
+
+.addToCartButtom{
+    background-color: aqua;
+}

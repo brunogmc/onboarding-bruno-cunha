@@ -1,0 +1,5 @@
+{
+  "store.custom#main-page": {
+    "children": ["boilerplate-store"]
+  }
+}

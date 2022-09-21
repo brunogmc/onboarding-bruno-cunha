@@ -1,0 +1,84 @@
+/*  request para fazer a criação do schema no masterdata v2
+
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+var raw = JSON.stringify({  
+  "properties": {
+    "userEmail": {
+      "type": "string"
+    },    
+    "userName": {
+      "type": "string"
+    },    
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["userEmail", "categories"],
+  "v-indexed": ["userEmail"],
+  "v-default-fields": ["userEmail", "categories"],
+  "v-security": {
+    "allowGetAll": true,
+    "publicRead": ["userEmail", "userName", "categories"],
+    "publicWrite": ["userEmail", "userName", "categories"],
+    "publicFilter": ["userEmail", "userName", "categories"]
+  },
+  "v-cache": false
+});
+var requestOptions = {
+	method: 'PUT',
+	headers: myHeaders,
+	body: raw,
+	redirect: 'follow'
+};
+fetch("/api/dataentities/subscriptioncategories/schemas/subscriptioncategories", requestOptions)
+	.then(response => response.text())
+	.then(result => console.log(result))
+	.catch(error => console.log('error', error));
+
+
+*/
+
+/* 
+
+fetch("/api/dataentities/newsletteruser/schemas/newsletteruser")
+	.then(response => response.text())
+	.then(result => console.log(result))
+	.catch(error => console.log('error', error));
+
+*/
+
+/* 
+query {
+  getSubscription(userEmail : "bruno"){
+    userEmail
+    categories
+  }
+}
+ */
+
+ /* 
+mutation {
+  createSubscription(userEmail:"joao",categories:["cat1" , "cat2"]){
+    userEmail
+    categories    
+  }
+}
+
+mutation {
+  createSubscription(userEmail : "adasd", categories : ["dasdas", "batatinha"]){
+    userEmail
+    categories
+  }
+}
+
+query {
+  getAllSubs{
+    userEmail
+    categories
+  }
+}
+ */

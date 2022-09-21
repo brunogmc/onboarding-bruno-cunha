@@ -1,0 +1,12 @@
+type Query {
+  getSubscription(userEmail: String): SubscriptionCategories,
+  getAllSubs : GetAllResponse
+  
+}
+
+type Mutation {
+  createSubscription(
+    userEmail: String, 
+    categories: [String]
+    ): SubscriptionCategories
+}

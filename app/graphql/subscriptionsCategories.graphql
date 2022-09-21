@@ -1,0 +1,35 @@
+type SubscriptionCategories {
+    userEmail: String
+    categories: [String]
+}
+
+type GetAllResponse {
+
+  """
+  list of subscriptions
+  """  
+  data: [SubscriptionCategories]
+  """
+  Pagination information
+  """
+  pagination: Pagination
+}
+
+
+"""
+Pagination information
+"""
+type Pagination {
+  """
+  Total number of pages
+  """
+  total: Int
+  """
+  Current page number
+  """
+  page: Int
+  """
+  Number of items per page
+  """
+  pageSize: Int
+}

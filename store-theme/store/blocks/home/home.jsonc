@@ -1,0 +1,112 @@
+{
+  "store.home": {
+    "blocks": [
+      //"countdown",
+      //"countdown.title",
+      //"flex-layout.row#shelf-home",
+      //"CheckLogin",
+      "modal-trigger#example"
+    ]
+  },
+  "modal-trigger#example": {
+    "children": [
+      "rich-text#example",
+      "modal-layout#NewsLetter"
+    ]
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Click me"
+    }
+  },
+  "modal-layout#NewsLetter": {
+    "props": {
+      "blockClass": "newsLetterCustom",
+      "fullScreen": {
+        "phone": true,
+        "desktop": false,
+        "tablet": false
+      }
+    },
+    "children": ["CustomNewsletter"]
+  },
+  "flex-layout.row#shelf-home": {
+    "children": [
+      "list-context.product-list#shelf-home"
+    ]
+  },
+  "list-context.product-list#shelf-home": {
+    "blocks": [
+      "product-summary.shelf#shelf-home"
+    ],
+    "children": [
+      "slider-layout#shelf-home"
+    ]
+  },
+  "product-summary.shelf#shelf-home": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-list-price",
+      "flex-layout.row#product-price-savings",
+      "product-installments",      
+      "customaddToCart"
+    ]
+  },
+  "slider-layout#shelf-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf-home"
+    }
+  },
+  "flex-layout.row#product-price-savings": {
+    "children": [
+      "product-selling-price",
+      "product-price-savings"
+    ]
+  },
+  "product-summary-price": {
+    "props": {
+      "labelSellingPrice": null,
+      "labelListPrice": null,
+      "showBorders": false
+    }
+  },
+  "product-price-savings": {
+    "props": {
+      "percentageStyle": "compact",
+      "message": "{savingsPercentage}"
+    }
+  },
+  //6x de R$20,00
+  "product-installments": {
+    "props": {
+      "message": "{installmentsNumber}x de {installmentValue}"
+    }
+  },
+  "flex-layout.row#product-quantity-buy-buttom": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "product-quantity",
+      "add-to-cart-button"
+    ]
+  },
+  "product-quantity": {
+    "props": {
+      "showLabel": false
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "COMPRAR"
+    }
+  }
+}

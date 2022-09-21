@@ -1,0 +1,6 @@
+mutation createSubscription($userEmail: String , $categories: [String]){
+  createSubscription(userEmail: $userEmail , categories: $categories) {
+    userEmail
+    categories
+  }
+}

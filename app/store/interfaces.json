@@ -1,0 +1,18 @@
+{
+  "countdown": {
+    "component": "Countdown"
+  },
+  "countdown.title": {
+    "component": "Title"
+  },
+  "customaddToCart": {
+    "component": "CustomAddToCart"
+  },
+  "CheckLogin": {
+    "component": "CheckLogin"
+  },
+  "CustomNewsletter": {    
+    "component": "CustomNewsletter"    
+  }
+  
+}

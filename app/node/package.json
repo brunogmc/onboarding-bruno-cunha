@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@vtex/api": "6.45.12"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@vtex/api": "6.45.12",
+    "typescript": "3.9.7",
+    "vtex.countdown": "https://brunogarbatzki--avantivtexio.myvtex.com/_v/private/typings/linked/v1/vtex.countdown@0.0.1+build1663772105/public/@types/vtex.countdown",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
+    "vtex.native-types": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.8.0/public/@types/vtex.native-types",
+    "vtex.order-items": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.13.21/public/@types/vtex.order-items",
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+    "vtex.session-client": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.session-client@1.0.2/public/@types/vtex.session-client",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.3/public/@types/vtex.styleguide"
+  },
+  "resolutions": {
+    "**/**/minimist": "^0.2.1",
+    "**/**/lodash": "^4.17.17"
+  }
+}
